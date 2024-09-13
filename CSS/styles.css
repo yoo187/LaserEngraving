@@ -1,0 +1,1116 @@
+/* Algemene stijlen voor de hele pagina */
+body {
+    background-color: #000; /* Achtergrondkleur van de pagina */
+    color: #fff; /* Tekstkleur voor contrast tegen de zwarte achtergrond */
+    font-family: Arial, sans-serif; /* Algemene font familie */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header stijlen */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #444;
+    background-color: #111; /* Donkergrijze achtergrond voor de header */
+}
+
+header img {
+    width: 300px;
+    height: auto;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff6f61; /* Kleurverandering bij hover */
+}
+
+/* Stijlen voor de secties */
+h1, h2 , h3, p{
+    text-align: center;
+    color: #fff;
+}
+
+h1, h2, h3{
+    font-family: "Gruppo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+*{
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.start, .second, .third, .end {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+
+}
+
+/* Stijlen voor de .start sectie */
+.start p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.start img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Stijlen voor de .second sectie */
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.continer img {
+    max-width: 300px;
+    height: auto;
+}
+
+section {
+    display: flex;
+    margin: 0 auto; /* Centreer de sectie */
+}
+
+.text {
+    max-width: 600px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Stijlen voor de .third sectie */
+.photo-container {
+    position: relative;
+    width: 1000px; /* Stel de breedte van de container in */
+    height: 600px; /* Stel de hoogte van de container in */
+    margin: 20px auto; /* Centreer de container */
+}
+.background-photo {
+    width: 100%;
+    height: 100%;
+}
+.overlay-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Stel de breedte van de overlay foto in */
+    height: auto; /* Zorg dat de hoogte automatisch wordt aangepast */
+}
+
+.third{
+    text-align: center;
+}
+
+/* Stijlen voor knoppen */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333; /* Donkergrijze achtergrondkleur van de button */
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer; /* Verander de cursor naar pointer */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Zwaardere schaduw voor diepte-effect */
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #555; /* Iets lichtere tint bij hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Versterkte schaduw bij hover */
+}
+.btn:active {
+    background-color: #222; /* Nog donkerder tint bij klikken */
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Terug naar originele schaduw bij klikken */
+}
+
+/* Stijlen voor de .end sectie */
+.end {
+    text-align: center;
+}
+
+.circle-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px auto;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer{
+    text-align: center;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 2560px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #111; /* Card background color */
+    border: 1px solid #333; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    text-align: center;
+    width: 300px; /* Fixed width for each card */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.card-text p {
+    margin: 0;
+}
+
+
+
+.contact-form-container {
+    background-color: #111; /* Form background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro, .why-choose-us, .contact-info, .contact-form-section, .additional-info {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+ul.reasons, ul.contact-details, ul.social-media {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul.reasons li, ul.contact-details li, ul.social-media li {
+    margin: 10px 0;
+}
+
+.contact-form-container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+/* Container setup */
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Section Setup */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Images should be responsive */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Maintain max width for larger screens */
+}
+
+/* Text Styling */
+.text {
+    width: 100%;
+    max-width: 500px;
+    text-align: justify;
+    margin: 20px 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+/* Medium screen adjustments */
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        margin: 0 20px;
+    }
+}
+
+/* Larger screen adjustments */
+@media (min-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+/* General container setup */
+.third {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Heading Styling */
+.third h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Photo Container Setup */
+.photo-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Background Image Styling */
+.background-photo {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+
+/* Overlay Image Styling */
+.overlay-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+}
+
+/* Button Styling */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Medium screen adjustments */
+@media (min-width: 768px) {
+    .third h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+
+    .overlay-photo {
+        max-width: 60%;
+    }
+}
+
+/* Larger screen adjustments */
+@media (min-width: 1024px) {
+    .third {
+        padding: 30px;
+    }
+
+    .third h2 {
+        font-size: 32px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 14px 28px;
+    }
+
+    .overlay-photo {
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Intro Section */
+.custom-orders-intro {
+    background-color: #1c1c1c; /* Dark gray background for intro section */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Process Section */
+.custom-orders-process ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.custom-orders-process li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: #333; /* Darker gray for list items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.custom-orders-process li strong {
+    color: #1e90ff; /* Bright blue for emphasis */
+}
+
+/* Form Section */
+.custom-orders-form {
+    background-color: #1c1c1c; /* Dark gray background for form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+    width: 40%;
+    
+}
+
+.custom-orders-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.custom-orders-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.custom-orders-form input[type="text"],
+.custom-orders-form input[type="email"],
+.custom-orders-form input[type="tel"],
+.custom-orders-form input[type="date"],
+.custom-orders-form select,
+.custom-orders-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #555; /* Gray border for input fields */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2c2c2c; /* Darker background for inputs */
+    color: #ffffff; /* White text in input fields */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-orders-form textarea {
+    resize: vertical;
+}
+
+.custom-orders-form button {
+    padding: 15px;
+    background-color: #1e90ff; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-orders-form button:hover {
+    background-color: #1c86ee; /* Slightly darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-orders-process li {
+        font-size: 16px;
+    }
+
+    .custom-orders-form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .custom-orders-form form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .custom-orders-form input[type="text"],
+    .custom-orders-form input[type="email"],
+    .custom-orders-form input[type="tel"],
+    .custom-orders-form input[type="date"],
+    .custom-orders-form select,
+    .custom-orders-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .custom-orders-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-orders-intro {
+        padding: 30px 15px;
+    }
+
+    .custom-orders-process li {
+        padding: 15px;
+    }
+
+    .custom-orders-form {
+        padding: 15px;
+    }
+
+    .custom-orders-form input[type="text"],
+    .custom-orders-form input[type="email"],
+    .custom-orders-form input[type="tel"],
+    .custom-orders-form input[type="date"],
+    .custom-orders-form select,
+    .custom-orders-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .custom-orders-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+.cart-items ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-items img {
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.cart-items span {
+    font-size: 1.2em;
+}
+
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: green; /* Slightly darker blue on hover */
+    cursor: pointer;
+}
+
+
+
+
+.fa-shopping-cart {
+    font-size: 20px;
+    color: white; /* Adjust the color as needed */
+    margin-right: 10px;
+}
+
+/* Position it in your header or navbar */
+header a .fa-shopping-cart {
+    position: relative;
+    
+}
+
+.stars{
+    font-size: 10px;
+}
+
+
+.star-rating {
+    color: gold;  /* Color for the stars */
+    font-size: 1.2em;  /* Adjust the size of the stars */
+}
+
+.star-rating i {
+    margin-right: 5px;  /* Spacing between stars */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Cart Section Styling */
+.cart-items {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cart-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%; /* Vul de breedte volledig op */
+    
+}
+
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #bdc3c7;
+    width: 100%;
+    
+}
+
+.cart-items li img {
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+.cart-items span {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+#total-price {
+    font-weight: bold;
+}
+
+/* Clear Cart Button */
+button#clear-cart {
+    padding: 15px 25px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#clear-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .cart-items {
+        padding: 15px;
+        align-items: center;
+    }
+
+    .cart-items li {
+        flex-direction: column;
+        
+    }
+
+    .cart-items li img {
+        margin-bottom: 10px;
+    }
+
+    button#clear-cart {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        
+    }
+}
+
+
+
+
+
+/* Base styling for the sliding animation */
+img.sliding-image {
+    position: absolute;
+    width: 100px;  /* Adjust the width of the image as it slides */
+    height: 100px; /* Adjust the height of the image as it slides */
+    z-index: 1000; /* Make sure the image appears on top */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+img.sliding-image.hidden {
+    opacity: 0;
+}
+
+.bounce {
+    animation: cartBounce 0.5s ease;
+}
+
+@keyframes cartBounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.cart-icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    color: green;
+    
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    min-width: 10px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Style the cart-items container */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    width: 100%; /* Adjust width as necessary */
+    max-width: 100%; /* Optional: Set a maximum width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style the table */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+#cart-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Style the button */
+button#clear-cart {
+    background-color: #ff4c4c; /* Adjust button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 25%;
+    width: 50%;
+    max-width: 50%;
+}
+
+button#clear-cart:hover {
+    background-color: #ff0000; /* Darker shade on hover */
+}
+
+
+
+
+/* Style the checkout button */
+button#checkout {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Padding inside the button */
+    font-size: 18px; /* Larger font size for readability */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Hover state for the checkout button */
+button#checkout:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Focus state for the checkout button */
+button#checkout:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow on focus */
+}
+
+
+
+
+
+.checkout-container {
+    max-width: 100%;
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Donkergrijze achtergrond voor container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: 'Gruppo', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h2 {
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-left: 10px;
+    margin-bottom: 15px; /* Ruimte tussen het veld en de volgende label */
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333; /* Donkere achtergrond voor inputs */
+    color: #fff; /* Witte tekst voor inputs */
+}
+
+input[type="text"]::placeholder {
+    color: #888; /* Lichtgrijze placeholder tekst */
+}
+
+button {
+    background-color: #4CAF50; /* Groene achtergrond */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049; /* Donkerder groen bij hover */
+}
+
+#order-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#order-summary-table th, #order-summary-table td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: center;
+}
+
+#order-summary-table th {
+    background-color: #333; /* Donkere header achtergrond */
+    color: #fff; /* Witte tekst voor headers */
+}
+
+#order-summary-table td {
+    background-color: #222; /* Nog donkerder grijs voor tabelrijen */
+}
+
+h3 {
+    color: #fff;
+    margin-top: 20px;
+}

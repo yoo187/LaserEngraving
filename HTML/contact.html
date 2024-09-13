@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gruppo&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html">
+            <img src="../IMG/FullLogo_Transparent_NoBuffer.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/about.html">About</a></li>
+                <li><a href="../HTML/gallery.html">Gallery</a></li>
+                <li><a href="../HTML/custom-orders.html">Order</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+                <li>
+                    <a href="../HTML/cart.html">
+                        <div class="cart-icon-wrapper">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-count">0</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <section class="intro">
+            <p>Thank you for visiting our website! We are thrilled to share the art and precision of laser engraving with you.</p>
+        </section>
+        <section class="intro">
+        <p>Our team is dedicated to transforming your ideas into tangible, lasting pieces of art.</p></section>
+        <section class="intro">
+        <p>Whether you're looking to personalize a gift, commemorate a special occasion, or add a unique touch to your home or business, we are here to help.</p>
+    </section>
+        <h2>Why Choose Us?</h2>
+        <section class="why-choose-us">
+            <ul class="reasons">
+                <li><strong>Expertise and Experience:</strong> With years of experience in laser engraving, we bring a high level of skill and craftsmanship to every project.</li>
+                <li><strong>Customization:</strong> We offer fully customized services to ensure that your vision is perfectly realized.</li>
+                <li><strong>Quality Materials:</strong> We use only the finest materials to ensure that your engraved pieces are durable and visually stunning.</li>
+                <li><strong>Customer Satisfaction:</strong> Your satisfaction is our top priority. We work closely with you from concept to completion to ensure that you are thrilled with the final product.</li>
+            </ul>
+        </section>
+
+        <h2>Get in Touch</h2>
+        <section class="contact-info">
+            <p>If you have any questions or would like to discuss a project, please don't hesitate to contact us. We are here to assist you and provide the information you need to make your laser engraving dreams a reality.</p>
+        </section>
+
+        <h2>Contact Form</h2>
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <form action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="hidden" name="access_key" value="a767b18e-ef95-4d49-b5e2-94ee31758edc">
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Upload Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*"> 
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <h2>Contact Information</h2>
+        <section class="additional-info">
+            <ul class="contact-details">
+                <li><strong>Email:</strong> laserstudioexpress@gmail.com</li>
+                <li><strong>Phone:</strong> +32 489 749 740</li>
+            </ul>
+            
+            <p>Follow us on social media and get inspired!</p>
+            <ul class="social-media">
+                <li><strong>Instagram:</strong> graff.woods</li>
+                <li><strong>Facebook:</strong> 3D Wood Graffiti Art</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <p class="rechten">&copy: 2024 Laser Engraving Lasting Impressions<br>All rights reserved</p>
+    </footer>
+
+
+    <script src="../JS/counter.js"></script>
+
+
+</body>
+</html>

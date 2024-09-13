@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gruppo&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../HTML/index.html">
+            <img src="../IMG/FullLogo_Transparent_NoBuffer.png" alt="logo" width="300" height="150">
+        </a>
+        <br><br>
+        <ul class="navbar">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/gallery.html">Gallery</a></li>
+            <li><a href="../HTML/custom-orders.html">Order</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+            <li class="cart-icon-container">
+                <a href="../HTML/cart.html">
+                    <div class="cart-icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Checkout</h1>
+        <div class="checkout-container">
+            <form action="submit_order.php" method="POST">
+                <section class="shipping-info">
+                    <h2>Shipping Information</h2>
+                    
+                    <input type="text" id="name" name="name" placeholder="Full Name:" required>
+                    
+                    <input type="text" id="address" name="address" placeholder="Address:" required>
+                    
+                    <input type="text" id="city" name="city" placeholder="City:" required>
+                    
+                    <input type="text" id="state" name="state" placeholder="State:" required>
+                    
+                    <input type="text" id="zip" name="zip" placeholder="Zip Code:" required>
+                    
+                    <input type="text" id="country" name="country" placeholder="Country:" required>
+                    
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number:" required>
+                </section>
+
+                <section class="payment-info">
+                    <h2>Payment Information</h2>
+                    <input type="text" id="card-name" name="card-name" placeholder="Caldholder Name" required>
+                    
+                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+                    
+                    <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+                    
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                </section>
+
+                <section class="order-summary">
+                    <h2>Order Summary</h2>
+                    <table id="order-summary-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-summary-list">
+                            <!-- Cart items will be injected here -->
+                        </tbody>
+                    </table>
+                </section>
+                <h3>Total Price: &euro; <span id="order-total">0.00</span></h3>
+
+                <button type="submit" id="place-order">Place Order</button>
+            </form>
+        </div>
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Retrieve cart data from localStorage
+            let cart = JSON.parse(localStorage.getItem('checkoutCart')) || [];
+
+            const orderSummaryList = document.getElementById('order-summary-list');
+            const orderTotalElement = document.getElementById('order-total');
+            let orderTotal = 0;
+
+            // Loop through the cart and display the items
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+
+                // Create cells
+                const imgCell = document.createElement('td');
+                const nameCell = document.createElement('td');
+                const priceCell = document.createElement('td');
+
+                // Create image element
+                const itemImage = document.createElement('img');
+                itemImage.src = item.image;
+                itemImage.alt = item.name;
+                itemImage.style.width = '100px';  // Adjust size as necessary
+                itemImage.style.height = '100px';
+
+                // Set cell contents
+                imgCell.appendChild(itemImage);
+                nameCell.textContent = item.name;
+                priceCell.textContent = `€${item.price.toFixed(2)}`;
+
+                // Add cells to row
+                row.appendChild(imgCell);
+                row.appendChild(nameCell);
+                row.appendChild(priceCell);
+
+                orderSummaryList.appendChild(row);
+
+                // Add up the total price
+                orderTotal += item.price;
+            });
+
+            // Display the total price
+            orderTotalElement.textContent = orderTotal.toFixed(2);
+
+            // Clean up localStorage after loading
+            localStorage.removeItem('checkoutCart');
+        });
+    </script>
+</body>
+</html>
